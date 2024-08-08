@@ -22,3 +22,23 @@ dmart_product_links_table_query = '''CREATE TABLE IF NOT EXISTS `dmart_products_
                                         product_url VARCHAR(255) UNIQUE,
                                         url_status VARCHAR(255) DEFAULT 'Pending'
                                         );'''
+
+dmart_product_data_table_query = '''CREATE TABLE products_data (
+                                    id INT AUTO_INCREMENT PRIMARY KEY,
+                                    product_name VARCHAR(255),
+                                    product_url VARCHAR(255),
+                                    brand VARCHAR(255),
+                                    weight VARCHAR(255),
+                                    variant_sku_id VARCHAR(255),
+                                    product_mrp VARCHAR(255),
+                                    product_dmart_price VARCHAR(255),
+                                    savings VARCHAR(255),
+                                    product_rate_per_weight VARCHAR(255),
+                                    is_Veg VARCHAR(255),
+                                    description JSON,
+                                    country_of_origin VARCHAR(255),
+                                    disclaimer TEXT,
+                                    manufacturer_info JSON,
+                                    service_center JSON,
+                                    extra_info JSON
+                                    );'''

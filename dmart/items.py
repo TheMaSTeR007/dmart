@@ -20,3 +20,24 @@ class DmartItem(scrapy.Item):
 class DmartProductUrls(scrapy.Item):
     product_name = scrapy.Field()
     product_url = scrapy.Field()
+
+
+class DmartProductData(scrapy.Item):
+    product_name = scrapy.Field()
+    product_url = scrapy.Field()
+    brand = scrapy.Field()
+    weight = scrapy.Field()
+    variant_sku_id = scrapy.Field()
+    product_mrp = scrapy.Field()
+    product_dmart_price = scrapy.Field()
+    savings = scrapy.Field()
+    product_rate_per_weight = scrapy.Field()
+    is_Veg = scrapy.Field()
+    description = scrapy.Field()
+    country_of_origin = scrapy.Field()
+    manufacturer_info = scrapy.Field()
+    disclaimer = scrapy.Field()
+    service_center = scrapy.Field()
+    shelf_life = scrapy.Field()
+    extra_info = scrapy.Field()
+

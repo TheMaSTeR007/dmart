@@ -73,7 +73,6 @@ class ProductsSpider(scrapy.Spider):
     def parse(self, response, **kwargs):
         # Receiving Response from request
         json_text = response.xpath('//script[@id="__NEXT_DATA__"]/text()').get()
-        print(json_text)
         json_response = json.loads(json_text)
 
         # Saving Page
